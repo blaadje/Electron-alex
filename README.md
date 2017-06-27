@@ -15,6 +15,6 @@ cd your-project-name
 yarn -i
 
 # In different terminal, start app
-npm start
+yarn start
 
 ```
