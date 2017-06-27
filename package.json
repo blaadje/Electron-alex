@@ -1,0 +1,16 @@
+{
+  "name": "elctron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-connect": "^0.6.1",
+    "electron-prebuilt": "^1.4.13",
+    "electron-prebuilt-compile": "^1.6.11"
+  }
+}
