@@ -19,6 +19,22 @@ var vm = new Vue({
   el: '#app',
   firebase: {
     users: userRef
+  },
+  data: {
+      newUser: ""
+  },
+  methods: {
+    removeUser: function(key){
+        userRef.child(key).remove()
+    },
+    addUser: function(){
+        if(this.newUser.trim()){
+            userRef.push({
+                name: this.newUser
+            })
+            this.newUser = ""
+        }
+    }
   }
 })
 

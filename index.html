@@ -1,16 +1,24 @@
 <!doctype html>
 <html>
   <head>
-    <title>Mon app</title>
+    <title>Mon app</title> 
+    <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js"></script>
   </head>
   <body style="-webkit-app-region:drag">
     <div id="app">
+      <h2>Datas from database</h2>
       <ul>
         <li v-for="user in users"> 
           {{ user.name }} 
+          <button @click="removeUser(user['.key'])">delete</button>
         </li>
       </ul>
+      <form @submit.prevent="addUser">
+        <input v-model="newUser">
+        <button>Add #{{ users.length }}</button>
+      </form>
     </div>
   <script src="app.js"></script>
   </body>
