@@ -12,5 +12,10 @@
     "electron-connect": "^0.6.1",
     "electron-prebuilt": "^1.4.13",
     "electron-prebuilt-compile": "^1.6.11"
+  },
+  "dependencies": {
+    "firebase": "^4.1.3",
+    "vue": "^2.3.4",
+    "vuefire": "^1.4.3"
   }
 }

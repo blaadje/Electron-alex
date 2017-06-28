@@ -2,8 +2,16 @@
 <html>
   <head>
     <title>Mon app</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js"></script>
   </head>
   <body style="-webkit-app-region:drag">
-    <h1>Mon Application Electron</h1>
+    <div id="app">
+      <ul>
+        <li v-for="user in users"> 
+          {{ user.name }} 
+        </li>
+      </ul>
+    </div>
+  <script src="app.js"></script>
   </body>
 </html>
